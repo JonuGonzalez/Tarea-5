@@ -32,15 +32,14 @@ def AFD(entrada):
         elif estado == 3:
             if  entrada[i] in letra:
                 estado = 3
-                print('l')
             elif entrada[i] in numero:
                 estado = 4
-                print('Cadena Valida')
             else:
                 print('Cadena Invalida')
                 return
-        elif estado == 4:
-            print('Cadena Valida')
+
+    print('Cadena Valida')
 
 AFD(cadena1)
+AFD(cadena2)
 
