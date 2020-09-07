@@ -30,9 +30,7 @@ def AFD(entrada):
                 print('Cadena Invalida')
                 return
         elif estado == 3:
-            if  entrada[i] in letra:
-                estado=3
-            elif entrada[i] in numero:
+            if  entrada[i] in numero:
                 estado = 4
             else:
                 print('Cadena Invalida')
